@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splitter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-group">
+            <label for="bill">Bill</label>
+            <input type="number" id="bill" placeholder="Enter bill amount" value="142.55">
+        </div>
+        <div class="input-group">
+            <label>Select Tip %</label>
+            <div class="tip-buttons">
+                <button onclick="selectTip(5)">5%</button>
+                <button class="active" onclick="selectTip(10)">10%</button>
+                <button onclick="selectTip(15)">15%</button>
+                <button onclick="selectTip(25)">25%</button>
+                <button onclick="selectTip(50)">50%</button>
+                <button onclick="selectTip(40)">40%</button>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="people">Number of People</label>
+            <input type="number" id="people" placeholder="Enter number of people" value="0">
+            <p id="error-message" style="color: red; display: none;">Can't be zero</p>
+        </div>
+        <div class="output-group">
+            <h3>Tip Amount / person</h3>
+            <p id="tip-amount">$0.00</p>
+            <h3>Total / person</h3>
+            <p id="total-amount">$0.00</p>
+        </div>
+        <button class="reset-btn" onclick="reset()">RESET</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+

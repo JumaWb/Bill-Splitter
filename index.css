@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D1E7E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #F5FFFF;
+    padding: 20px;
+    border-radius: 15px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.tip-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip-buttons button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #8ED8DE;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tip-buttons button.active {
+    background-color: #4EC8C8;
+}
+
+.output-group {
+    background-color: #023232;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.output-group h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.output-group p {
+    margin: 5px 0;
+    font-size: 24px;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #8ED8DE;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
